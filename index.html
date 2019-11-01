@@ -15,11 +15,21 @@
 
   <!-- Custom styles for this template -->
   <link href="css/shop-homepage.css" rel="stylesheet">
-
+  
+  <script language = "javascript">
+    function showPopup(){window.open("popup1.html","a","width=400,height=300,left=100,top=50");}
+      
+    
+    
+  
+  </script>
 </head>
 
 <body>
 
+  <!-- Start of first page -->
+<section data-role="page" id="start_page">
+  
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -95,7 +105,7 @@
               <a href="#"><img class="card-img-top" src="https://t1.daumcdn.net/cfile/tistory/2536954357884B6335" width = "300" height = "150" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Adidas </a>
+                  <span onclick ="showPopup();"><a href="#">Adidas </a></span>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -209,6 +219,13 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  
+  
+  
+  
+  
+  
 
 </body>
 
