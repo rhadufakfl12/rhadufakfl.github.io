@@ -8,8 +8,8 @@
   <input type="text" value = "6자리 입력" id="input">
   <button onclick="input()">입력받기</button><br><br>
   
-  <textarea id="output"></textarea><br>
-  <button onclick="output()">출력하기</button><br><br>
+  <textarea id="output"></textarea>
+  <button onclick="output()">출력하기</button>
   <font size = "3">원이 결제될 예정입니다.<br> 구매를 원하신다면 구매 버튼을 클릭해주세요.<br></font>
 
   <!-- 아래부터 자바스크립트 -->
@@ -18,10 +18,11 @@
 
   function input(){
     var input = document.getElementById("input").value;
-     if(input == asdf){
-    	  temp = parseInt(1000);
+     if(input == 123){
+    	 temp = parseInt(1000);
+       alert(' 쿠폰이 적용되었습니다.');
      }
-    else if(input != asdf){
+    else{
        alert(' 존재하지 않은 쿠폰입니다.');
        temp = parseInt(0);
   }
