@@ -3,7 +3,8 @@
   <meta charset ="UTF-8">
   <title>Document</title>
 
-  <h1> do u wanna pay for that? </h1>
+  <h1> <font color = "blue"> do u wanna pay for that? </font></h1>
+  <h2> <font size = "3"> 현재 가격은 5000원입니다.<br> 쿠폰이 있으시다면 입력해주세요.</font></h2>
   <input type="text" id="input">
   <button onclick="input()">입력받기</button><br><br>
   
@@ -17,11 +18,11 @@
 
   function input(){
   var input = document.getElementById("input").value;
-  temp = input;
+  temp = parseInt(input);
   }
 
   function output(){
-  document.getElementById("output").value = temp;
+  document.getElementById("output").value = 5000-temp;
   }
   </script>
 
