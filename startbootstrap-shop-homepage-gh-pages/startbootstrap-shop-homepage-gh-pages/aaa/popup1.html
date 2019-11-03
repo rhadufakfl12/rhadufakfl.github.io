@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset ="UTF-8">
+  <title>Document</title>
+
+  <h1> <font color = "blue"> do u wanna pay for that? </font></h1>
+  <h2> <font size = "3"> 현재 가격은 5000원입니다.<br> 쿠폰이 있으시다면 입력해주세요.</font></h2>
+  <input type="text" id="input">
+  <button onclick="input()">입력받기</button><br><br>
+  
+  <textarea id="output"></textarea>
+  <button onclick="output()">출력하기</button><br><br>
+
+
+  <!-- 아래부터 자바스크립트 -->
+  <script type="text/javascript">
+  var temp;
+
+  function input(){
+  var input = document.getElementById("input").value;
+  temp = parseInt(input);
+  }
+
+  function output(){
+  document.getElementById("output").value = 5000-temp;
+  }
+  </script>
+
+</head>
+<body>
+
+<input type = "button" value="close" onclick="self.close();"/>
+</body>
+</html>
