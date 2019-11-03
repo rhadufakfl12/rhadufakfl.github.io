@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset ="UTF-8">
+  <title>Document</title>
+
+  <h1> <font color = "blue"> 결제하시겠습니까? </font></h1>
+  <h2> <font size = "3"> 현재 가격은 68,000원입니다.<br> 쿠폰이 있으시다면 입력해주세요.</font></h2>
+  <input type="text" value = "6자리 입력" id="input">
+  <button onclick="input()">쿠폰입력</button><br><br>
+  
+  <textarea id="output"></textarea>
+  <button onclick="output()">결제금액출력</button><br>
+  <font size = "3">원이 결제될 예정입니다.<br> 구매를 원하신다면 구매 버튼을 클릭해주세요.<br></font><br>
+ 
+
+  <!-- 아래부터 자바스크립트 -->
+  <script type="text/javascript">
+  var temp;
+
+  function input(){
+    var input = document.getElementById("input").value;
+     if(input == 123456){
+    	 temp = parseInt(2000);
+       alert(' 쿠폰이 적용되었습니다.');
+     }
+     else{
+       alert(' 존재하지 않은 쿠폰입니다.');
+       temp = parseInt(0);
+     }
+  }
+
+  function output(){
+    document.getElementById("output").value = 68000-temp;
+  }
+    
+  function purchase(){
+   	alert(' 구매에 성공했습니다. ');
+  }  
+  </script>
+
+</head>
+<body>
+
+<input type = "button" value="close" onclick="self.close();"/>
+<button onclick="purchase()">구매</button><br>
+</body>
+</html>
